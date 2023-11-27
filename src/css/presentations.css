@@ -1,0 +1,275 @@
+ /* PRÉRQUIS */
+
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+ * {
+     margin: 0px;
+     padding: 0px;
+ 
+     font-family: Quicksand, sans-serif;
+ 
+     box-sizing: border-box;
+ }
+ 
+ body {
+     margin-left: 7%;
+     margin-right: 7%;
+     margin-top: 2%;
+     
+     background-image: url("../../resources/images/background.jpg");
+     background-color: #76B6D4;
+     /* Couleur utilisée si l'image n'est pas disponible */
+ 
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     border: 2px solid white;
+ 
+     /* Rendre le fond transparent */
+     backdrop-filter: blur(7px);
+ }
+ 
+ 
+ /* HEADER */
+ 
+ 
+ #header {
+     border: 3px solid black;
+     margin: 2px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     justify-content: space-around;
+ 
+     
+ 
+ }
+ 
+ #header img {
+     max-width: 80px;
+ }
+ 
+ #header form {
+     width: 200px;
+     border-radius: 5px;
+     padding: 10px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ 
+ }
+ 
+ #header input,
+ button {
+     width: 100%;
+     padding: 6px 10px;
+ }
+ 
+ button {
+     width: 40%;
+ }
+ 
+ 
+ /* BARRE DE NAVIGATION */
+ 
+ 
+ #nav{
+     padding: 10px;
+ 
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     background-color: white;
+ 
+     
+ 
+     overflow: hidden;
+     position: sticky;
+     top: 0;
+ }
+ #nav #liste{
+     list-style: none;
+     
+     /* display: none; */
+     /* flex-direction: column; */
+     /* flex-wrap: wrap; */
+     /* gap: 25px; */
+ }
+ #nav a{
+     text-decoration: none;
+     color: inherit;
+     margin: 10px;
+ }
+ #nav .nav-titre{
+     margin-right: 50px;
+     margin-left: 3%;
+ }
+ 
+ 
+ #nav img{
+     width: 40px;
+     /* display: none; */
+ }
+ 
+ #nav .toggle{
+     display: none;
+ }
+
+ #nav a:hover{
+    color: orange;
+ }
+ 
+ /* PARTIE PRINCIPALE */
+ 
+ #main{
+     display: grid;
+     grid-template-columns: 70% 30%;
+ }
+ 
+ #content{
+     /* border: 2px solid yellow; */
+     grid-column-start: 1;
+     
+     min-height: 550px;
+     /* border: 2px solid black; */
+     border-radius: 2%;
+ }
+ 
+ #content-titre{
+     
+     margin: 25px;
+ 
+     display: flex;
+     justify-content: center;
+     
+ }
+ #content-main{
+     margin-left: 7%;
+     margin-right: 7%;
+     font-size: large;
+ 
+     margin-bottom: 5%;
+ 
+     color: whitesmoke;
+     
+ 
+ }
+ #aside{
+     /* border: 2px solid blue; */
+     grid-column-start: 2;
+ 
+     /* border-top: 2px solid black; */
+     /* border-bottom: 2px solid black; */
+     /* border-right: 2px solid black; */
+     /* border-radius: 3%; */
+ }
+ 
+ #aside-titre{
+     margin: 25px;
+ 
+     display: flex;
+     justify-content: center;
+ }
+ 
+ #aside-main{
+     margin-left: 7%;
+     margin-right: 7%;
+     font-size: large;
+ 
+     margin-bottom: 5%;
+ 
+     color: whitesmoke;
+ }
+ 
+ #aside img{
+    max-width: 100%;
+  }
+ 
+ /* FOOTER */
+ 
+ #footer{
+     padding-right: 5%;
+     padding-left: 5%;
+     color: white;
+     background-color: black;
+     
+ }
+ #footer-titre{
+     display: flex;
+     justify-content: center;
+ 
+     padding-top: 10px;
+ 
+     text-decoration: underline;
+     
+ }
+ #footer-main{
+     padding: 25px;
+     display: grid;
+     grid-template-columns: 50% 50%;
+     column-gap: 10%;
+ }
+ #footer-main h4{
+     display: flex;
+     justify-content: center;
+     
+     padding-bottom: 15px;
+ 
+     
+     
+ }
+ #footer-main ul li{ 
+     margin-left: 40px; 
+ 
+ }
+ #footer-main ul li a{
+     text-decoration: none;
+     color: white;
+ }
+ #footer-main ul li a:hover{
+    color: orange;
+ }
+
+ 
+ 
+ 
+ 
+ @media all and (max-width: 590px) {
+ 
+     /* PARTIE HEADER */
+     #header {
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+ 
+     #header h1 {
+         text-align: center;
+     }
+ 
+     /* PARTIE NAV */
+     
+ 
+     #nav #liste{
+         padding: 10px;
+ 
+         display: none;
+         flex-direction: column;
+         
+     }
+ 
+     #footer-main ul li{
+     
+         margin-left: 5px; 
+         
+         /* list-style: none; */
+     }
+        
+ 
+ }
+ @media all and (min-width:590px){
+     #nav img{
+         display: none;
+     }
+ }
+ 

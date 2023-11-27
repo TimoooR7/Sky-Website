@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sky | Présentation du jeu</title>
+    <meta name="Projet HTML/CSS sur le jeu vidéo Sky: Children Of The Light" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="../../resources/images/LogoTRTrace.jpg">
+
+    <link rel="stylesheet" href="../css/Sky-details.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <a href="../../index.html"><img src="../../resources/images/logo.png" alt="logo" title="Logo Sky | Accueil"></a>
+            <h1>Sky; Présentation du jeu</h1>
+            <form>
+                <input type="text" placeholder="Rechercher..." name="query"
+                    aria-label="Rechercher du contenu dans le site">
+                <button>Go!</button>
+            </form>
+        </div>
+
+        <div id="nav">
+            <h3 class="nav-titre">Barre de navigation</h3>
+            <label for="toggle"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><img
+                        src="../../resources/images/hamburger.png"
+                        alt="menu hamburger"></a></label>
+            <input type="checkbox" class="toggle">
+            <div id="liste">
+                <a href="../../index.html">Accueil</a>
+                <a href="presentations.html">À propos de moi</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        
+        <div id="main">
+            <div id="main-titre">
+                <h2>Un jeu coloré</h2>
+            </div>
+            <div id="content-main">
+                <p>
+                    <span>Sky; Children of the Light</span> est un jeu plein de couleurs et de musiques
+                    qui sauront vous séduire. Un large choix de modèles 3D designés avec 
+                    professionalisme et entrain ainsi que une vaste palette de paysages ont
+                    été soigneusement intégrés dans cet univers fait pour les amateurs de 
+                    jeux <em>Open world</em>.
+                </p>
+                <div id="images">
+                    <img src="../../resources/images/children.jpg" alt="Image d'un enfant de la lumière" title="Un enfant de la lumière">
+                    <img src="../../resources/images/ghost.jpg" alt="Image d'un fantôme dans Sky" title="Fantôme dans Sky">
+                </div>
+                <p>
+                    Jouable sur mobile et sur Nintendo Switch, vous pouvez tout à fait y jouer en installant un <strong>émulateur</strong> 
+                    Android tel que <a href="https://www.bluestacks.com/fr/bluestacks-5.html" target="blank">BlueStacks 5</a> 
+                    et bien d'autres. Les contrôles ont été designés pour une posture de jeu 
+                    optimale. La taille des joysticks et des boutons sont modifiables depuis les 
+                    paramètres. 
+                </p>
+                
+                <p>
+                    Attention, n'oubliez pas d'activer le son de votre jeu ! Les musiques représentent 
+                    envrion 50% de l'expérience. Installez vous confortablement dans 
+                    votre lit et profitez pleinement de ce chef-d'œvre.
+                </p>
+                <audio controls autoplay>
+                    <source src="../../resources/soundtracks/Sky-Soundtrack.mp3" type="audio/mpeg" alt="Bande son de Sky">
+                    Votre navigateur ne supporte pas ce format de vidéo. Navré. Trouvez le <a href="https://youtu.be/6GmL_DKR4fo" target="blank">ici.</a>
+                </audio>
+                <p>
+                    Si par malheur vous veniez à casser votre téléphone ou à perdre vos données, 
+                    ne vous inquiétez pas car elles ont toutes été stockées sur les serveurs 
+                    de <em>Thatgamecompany</em>. Vous pouvez très bien commencer votre aventure
+                    sur Nintedo Switch et la terminer sur votre mobile.
+                </p>
+                <p>
+                    Vous avez un problème ? Sky a une vaste communauté de joueurs expérimentés 
+                    qui sauront vous aider. Vous pouvez rejoindre le <a href="https://tinyurl.com/yr2makxf" target="blank">serveur Discord</a> 
+                    ou m'envoyer un <a href="mailto:timo.rouwenhorst@eduvaud.ch">e-mail.</a>
+                </p>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-titre">
+                <h3>Mentions légales</h3>
+            </div>
+            <div id="footer-main">
+                <h4>Information sur le créateur du site</h4>
+                <h4>Me suivre sur les réseaux sociaux</h4>
+                <ul>
+                    <li>Nom : Rouwenhorst</li>
+                    <li>Prénom : Timo</li>
+                    <li><a href="https://tinyurl.com/3kvb5hue" target="blank">Adresse : Bastenakenstraat 50, Nieuw Sloten AMS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://i.redd.it/zdcv9hgpqfu81.jpg" target="blank">LinkedIn</a></li>
+                    <li><a href="https://i.redd.it/zdcv9hgpqfu81.jpg" target="blank">Instagram</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("liste");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
