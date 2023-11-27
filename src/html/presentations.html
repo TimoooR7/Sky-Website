@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Présentations | Timo Rouwenhorst</title>
+    <meta name="Projet HTML/CSS sur le jeu vidéo Sky: Children Of The Light" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="../../resources/images/LogoTRTrace.jpg">
+
+    <link rel="stylesheet" href="../css/presentations.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <a href="../../index.html"><img src="../../resources/images/logo.png" alt="logo" title="Logo Sky"></a>
+            <h1>Présentation personnelle</h1>
+            <form>
+                <input type="text" placeholder="Rechercher..." name="query"
+                    aria-label="Rechercher du contenu dans le site">
+                <button>Go!</button>
+            </form>
+        </div>
+
+        <div id="nav">
+            <h3 class="nav-titre">Barre de navigation</h3>
+            <label for="toggle"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><img
+                        src="../../resources/images/hamburger.png" alt="menu hamburger"></a><!--<img src="resources/images/hamburger.png">--></label>
+            <input type="checkbox" class="toggle">
+            <div id="liste">
+                <a href="../../index.html">Accueil</a>
+                <a href="Sky-details.html">Sky; La présentation</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div id="main">
+            <div id="content">
+                <div id="content-titre">
+                    <h2>Timo Rouwenhorst</h2>
+                </div>
+                <div id="content-main">
+                    <p>
+                        Né à amsterdam le 17 février 2007 dans le quartier de Nieuw Sloten, à la Bastenakenstraat numéro 50, j'ai vécu 1 an
+                        et demi dans la capitale. J'ai donc été initié au néerlandais dès mon plus jeune âge, et je ne l'ai pas abandonné.
+                    </p>
+                    <br>
+                    <p>
+                        Je parle couramment français ainsi que néerlandais. Je ne pourrai pas vous écrire une grande dissertation en néerlandais
+                        mais je peux tenir une conversation courante. 
+                    </p>
+                    <br>
+                    <p>
+                        J'ai choisi l'informatique car cela m'a toujours intéressé. Aussi car je jouais beaucoup aux jeux vidéos, mais je n'ai
+                        pas arrêté ma curiosité à Angry Birds®. 
+                    </p>
+                    <br>  
+                    <p>
+                        En éspérant que vous apprécierez mon site web, je vous souhaite une bonne journée/soirée et à bientôt !
+                    </p>
+                </div>
+            </div>
+            <div id="aside">
+                <div id="aside-titre">
+                    <h3>Ma tête</h3>
+                </div>
+                <div id="aside-main">
+                    <img src="../../resources/images/Timo.jpg">
+                    <br>
+                    <br>
+                    <p>Voici une photo de moi lors de mes promotions de fin d'école obligatoire.</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-titre">
+                <h3>Mentions légales</h3>
+            </div>
+            <div id="footer-main">
+                <h4>Information sur le créateur du site</h4>
+                <h4>Me suivre sur les réseaux sociaux</h4>
+                <ul>
+                    <li>Nom : Rouwenhorst</li>
+                    <li>Prénom : Timo</li>
+                    <li><a href="https://tinyurl.com/3kvb5hue" target="blank">Adresse : Bastenakenstraat 50, Nieuw Sloten AMS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://i.redd.it/zdcv9hgpqfu81.jpg" target="blank">LinkedIn</a></li>
+                    <li><a href="https://i.redd.it/zdcv9hgpqfu81.jpg" target="blank">Instagram</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("liste");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sky | Accueil</title>
+    <meta name="Projet HTML/CSS sur le jeu vidéo Sky: Children Of The Light" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="resources/images/LogoTRTrace.jpg">
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <a href="index.html"><img src="resources/images/logo.png" alt="logo" title="Logo Sky"></a>
+            <h1>Sky: Accueil</h1>
+            <form>
+                <input type="text" placeholder="Rechercher..." name="query"
+                    aria-label="Rechercher du contenu dans le site">
+                <button>Go!</button>
+            </form>
+        </div>
+
+        <div id="nav">
+            <h3 class="nav-titre">Barre de navigation</h3>
+            <label for="toggle"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><img
+                        src="resources/images/hamburger.png"
+                        alt="menu hamburger"></a><!--<img src="resources/images/hamburger.png">--></label>
+            <input type="checkbox" class="toggle">
+            <div id="liste">
+                <a href="src/html/Sky-details.html">Sky; La présentation</a>
+                <a href="src/html/presentations.html">À propos de moi</a>
+                <a href="src/html/contact.html">Contact</a>
+            </div>
+        </div>
+        <div id="main">
+            <div id="content">
+                <div id="content-titre">
+                    <h2>Une nouvelle ère dans le monde du jeu vidéo</h2>
+                </div>
+                <div id="content-main">
+                    <p>
+                        Sorti initialement en juillet 2019 sur IOS, puis en juin 2020 sur Android, Sky: Children of the
+                        Light a conquis le cœur des joueurs du monde entier. Développé par <a
+                            href="https://fr.wikipedia.org/wiki/Thatgamecompany" target="blank">Thatgamecompany</a>, le studio
+                        renommé derrière le célèbre jeu <em>Journey</em>, Sky offre une expérience unique où
+                        l'exploration, la
+                        collaboration et l'expression artistique se rejoignent pour créer un véritable chef-d'œuvre
+                        interactif.
+                    </p>
+                    <video controls="controls" poster="resources/images/thumbnail.png">
+                        <source src="resources/videos/trailer.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas ce format de vidéo. Navré! Retrouvez-la <a
+                            href="https://www.youtube.com/watch?v=g3r1KbzSiT8" target="blank">ici.</a>
+                    </video>
+                    <p>
+                        Plongez dans une aventure extraordinaire où la beauté visuelle et la musique enchantante se
+                        marient harmonieusement. Explorez des paysages époustouflants, des cieux chatoyants et des
+                        contrées mystérieuses, tout en cherchant à ramener la lumière dans un royaume plongé dans les
+                        ténèbres.
+                    </p>
+                </div>
+            </div>
+            <div id="aside">
+                <div id="aside-titre">
+                    <h3>Fun fact !</h3>
+                </div>
+                <div id="aside-main">
+                    <p>Ce site web a été crée dans le cadre d'un projet HTML/CSS.
+                        Vous ne devinerez jamais combien de temps j'ai passé sur
+                        la création de la barre de navigation...
+                    </p>
+                    <br>
+                    <br>
+                    <p>Pas besoin de dire. Ca fait peur.</p>
+                    <br>
+                    Si vous avez des propositions ou autres, je vous laisse me contacter
+                    par <a href="mailto:timo.rouwenhorst@eduvaud.ch">mail</a> directement ou par la page de contact.
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-titre">
+                <h3>Mentions légales</h3>
+            </div>
+            <div id="footer-main">
+                <h4>Information sur le créateur du site</h4>
+                <h4>Me suivre sur les réseaux sociaux</h4>
+                <ul>
+                    <li>Nom : Rouwenhorst</li>
+                    <li>Prénom : Timo</li>
+                    <li><a href="https://tinyurl.com/3kvb5hue" target="blank">Adresse : Bastenakenstraat 50, Nieuw
+                            Sloten AMS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://i.redd.it/zdcv9hgpqfu81.jpg" target="blank">LinkedIn</a>
+                    </li>
+                    <li><a href="https://i.redd.it/zdcv9hgpqfu81.jpg" target="blank">Instagram</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("liste");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
